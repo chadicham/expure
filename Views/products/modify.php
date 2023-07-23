@@ -1,9 +1,4 @@
-<!-- si session user n'est pas admin alors redirige sur /products -->
-<?php
-// Démarrez la session
-session_start();
 
-?>
 <?php
 $title = "Accueil";
 $description = "Page réservée à l'admin afin de modifier les articles.";
