@@ -6,7 +6,7 @@ $description = "Art et Evénementiel : Inspirer un mouvement autour de l’art e
 <?php if (isset($_SESSION["user"]) && $_SESSION["user"]["isAdmin"] === 1): ?>
 
 
-<h1>PAGE ARTISTES</h1>
+<h1>NOS ARTISTES</h1>
 <?php if (isset($_SESSION["message"])): ?>
     <p class="message"><?= $_SESSION["message"] ?></p>
 <?php endif; unset($_SESSION["message"]) ?>
@@ -35,7 +35,7 @@ $description = "Art et Evénementiel : Inspirer un mouvement autour de l’art e
     <?php else: ?>
 
 
-<h1>PAGE ARTISTES</h1>
+<h1>NOS ARTISTES</h1>
 
 <!-- Section principale -->
 <section class="main">

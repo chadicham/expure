@@ -25,7 +25,17 @@ class ProductsController extends Controller
 
     public function add()
     {
-        //Ici, l'utilisateur est bien connecté, il peut créer un post
+        //Ici, l'utilisateur est admin
+        //indique si l'utilisateur est administrateur ou non.
+        $isAdmin = $_SESSION["user"]["isAdmin"];
+
+        // Vérifie si l'utilisateur n'est pas administrateur (isAdmin est faux)
+        if (!$isAdmin) {
+            // Effectuez la redirection vers "/products"
+            header("Location: /");
+            exit;
+        }
+
         //On peut maintenant traiter le formulaire
         if(!empty($_POST)) {
             $error = [];
@@ -69,6 +79,17 @@ class ProductsController extends Controller
     }
     public function modify($id)
     {
+
+        //Ici, l'utilisateur est admin
+        //indique si l'utilisateur est administrateur ou non.
+        $isAdmin = $_SESSION["user"]["isAdmin"];
+
+        // Vérifie si l'utilisateur n'est pas administrateur (isAdmin est faux)
+        if (!$isAdmin) {
+            // Effectuez la redirection vers "/products"
+            header("Location: /");
+            exit;
+        }
 
         $model = new ProductsModel();
         $product = $model->findById($id);

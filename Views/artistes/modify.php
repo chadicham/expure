@@ -3,15 +3,6 @@
 // Démarrez la session
 session_start();
 
-//indique si l'utilisateur est administrateur ou non.
-$isAdmin = false;
-
-// Vérifie si l'utilisateur n'est pas administrateur (isAdmin est faux)
-if (!$isAdmin) {
-    // Effectuez la redirection vers "/products"
-    header("Location: /products");
-    exit;
-}
 ?>
 <?php
 $title = "Accueil";
