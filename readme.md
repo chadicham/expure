@@ -23,3 +23,12 @@ Expure est une plateforme artistique en ligne qui permet aux artistes d'exposer 
 ## Installation
 
 1. Clonez ce dépôt dans le répertoire de votre serveur web :
+2. Créez une nouvelle base de donnée en important le fichier /Core/bbd_expure.sql
+3. Adaptez les données de connexion vers votre bdd dans /Core/Db.php
+
+Utilisateurs exemples:
+
+| Email | Password | isAdmin |
+| :---- |:--------:|--------:|
+| test@test.ch | 123456   |   false |
+| admin@admin.ch | 123456 |   true  |
