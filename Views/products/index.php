@@ -26,7 +26,7 @@ $description = "Art et Evénementiel : Inspirer un mouvement autour de l’art e
                     <p><?= $product->short_description ?> </p>
                 </div>
                 <div id="artiste_name">
-                    <h4 id="price"><?= $product->price_products ?> .-</h4>
+                    <h4 id="price"><?= $product->price_products ?>.-</h4>
                     <p>#<?= $product->artiste_name ?> </p>
                 </div>
                 <button class="btn"> <a href="/products/modify/<?=$product->id?>">Modifier</a></button>
@@ -51,7 +51,7 @@ $description = "Art et Evénementiel : Inspirer un mouvement autour de l’art e
                 <img class="produit-card" src="<?=$product->img ?>" alt="<?= $product->name_products ?>">
                 <div class="card-header">
                     <h4 class="title"><?= $product->name_products ?></h4>
-                    <h4 class="price"><?= $product->price_products ?></h4>
+                    <h4 class="price"><?= $product->price_products ?>.-</h4>
                 </div>
                 <div class="card-body">
                     <p><?= $product->short_description ?> </p>

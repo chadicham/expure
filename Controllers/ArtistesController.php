@@ -2,6 +2,7 @@
 namespace App\Controllers;
 
 use App\Models\ArtistesModel;
+use App\Models\ProductsModel;
 
 class ArtistesController extends Controller
 {
@@ -122,6 +123,23 @@ class ArtistesController extends Controller
 
 
         $this->render("artistes/modify", compact("artiste"));
+    }
+
+    public function delete($id)
+    {
+        $model = new ArtistesModel();
+        $artiste = $model->findById($id);
+
+        if (!$artiste)
+        {
+            header("Location: /artistes");
+            exit();
+        }
+
+        $artistedeleted = new ArtistesModel();
+        $artistedeleted->delete($artiste->id);
+        $_SESSION["message"] = "Votre artiste a été supprimé.";
+        header("Location: /artistes");
     }
 
 
