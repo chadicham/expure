@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <title>Expure<?= " - ".$title??"" ?></title>
     <meta name="description" content="<?=$description?>">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.png">
     <!-- Socials -->
     <meta content="Expure<?= " - ".$title??"" ?>" property="og:title">
     <meta content="<?=$description?>" property="og:description">

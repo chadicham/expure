@@ -1,5 +1,5 @@
 <?php
-$title = "Accueil";
+$title = "Produits";
 $description = "Art et Evénementiel : Inspirer un mouvement autour de l’art et la culture pour rendre chaque expérience unique et mémorable.";
 ?>
 

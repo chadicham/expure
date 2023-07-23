@@ -1,7 +1,6 @@
 <?php
-// Démarrez la session
-session_start();
-
+$title = "Ajouter un produit";
+$description = "Art et Evénementiel : Inspirer un mouvement autour de l’art et la culture pour rendre chaque expérience unique et mémorable.";
 ?>
 <div id="form" >
     <H2>Ajoutez un nouveau produit</H2>

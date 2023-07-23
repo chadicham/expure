@@ -1,5 +1,5 @@
 <?php
-$title = "Accueil";
+$title = "Voir plus";
 $description = "Affiche plus d'information à propos d'un article.";
 ?>
 <!-- Section principale -->

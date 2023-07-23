@@ -1,6 +1,6 @@
 
 <?php
-$title = "Accueil";
+$title = "Modifier un artiste";
 $description = "Page réservée à l'admin afin de modifier les articles.";
 ?>
 <form id="form" method="post">

@@ -1,8 +1,6 @@
-<!-- si session user n'est pas admin alors redirige sur /products -->
 <?php
-// Démarrez la session
-session_start();
-
+$title = "Ajouter un artiste";
+$description = "Art et Evénementiel : Inspirer un mouvement autour de l’art et la culture pour rendre chaque expérience unique et mémorable.";
 ?>
 <div id="form" >
     <H2>Ajoutez un/une artiste</H2>

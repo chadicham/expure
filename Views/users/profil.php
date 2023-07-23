@@ -1,4 +1,7 @@
-
+<?php
+$title = "Accueil";
+$description = "Art et Evénementiel : Inspirer un mouvement autour de l’art et la culture pour rendre chaque expérience unique et mémorable.";
+?>
 <!-- Header -->
 <header>
     <h2>Des créations uniques transformées en oeuvre d’art.</h2>

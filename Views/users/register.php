@@ -1,4 +1,7 @@
-
+<?php
+$title = "Créer un compte";
+$description = "Art et Evénementiel : Inspirer un mouvement autour de l’art et la culture pour rendre chaque expérience unique et mémorable.";
+?>
 <?php if (isset($_SESSION["user"]))
 {
     //Renvoie sur la page profil
